@@ -4,7 +4,7 @@ import '../styles/Footer.scss'
 export const Footer = () => {
   return (
     <div id='footer'>
-        <section>
+        <section className='footernav'>
             <nav>
                 <ol>
                       <li><img src='/assets/shared/desktop/logo-light.png' alt='designo logo' /></li>
@@ -17,16 +17,19 @@ export const Footer = () => {
         <hr></hr>
 
         <section className='office'>
-            <article>
+            <div>
+            <article className=''>
                 <h4>Designo Central Office</h4>
-                <p>3886 Wellington Street Toronto,Ontario M9C 3j5</p>
+                <p>3886 Wellington Street Toronto, Ontario M9C 3j5</p>
             </article>
-              <article>
-                  <h4>Designo Central Office</h4>
-                  <p>3886 Wellington Street Toronto,Ontario M9C 3j5</p>
+              <article className=''>
+                  <h4>Designo (Central Office)</h4>
+                  <p>p : +1 253-863-8967</p>
+                  <p>M : contact@designo.co</p>
               </article>
-              <article>
-                  <ol>
+              </div>
+              <article className='footericon'>
+                  <ol className=''>
                       <li><img src='/assets/shared/desktop/icon-facebook.svg' alt='facebook icon' /></li>
                       <li><img src='/assets/shared/desktop/icon-youtube.svg' alt='youtube icon' /></li>
                       <li><img src='/assets/shared/desktop/icon-twitter.svg' alt='twitter icon' /></li>

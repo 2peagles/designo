@@ -23,7 +23,7 @@ body, html{
   margin:0;
   padding:0;
 }
-section:not(.home_contact_section){
+section:not(.home_contact_section, .office, .footernav){
   margin:6rem 0;
   @media (width < 700px){
     margin:2rem 0;
