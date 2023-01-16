@@ -1,0 +1,53 @@
+// colors
+    // primary
+        $peach:#e7816b;
+        $black:#1D1C1E;
+        $white:#fff;
+    // secondary
+        $lightpeach:#FFAD9B;
+        $darkgrey:#333136;
+        $lightgrey:#F1F3F5;
+// typography
+    $regular:400;
+    $medium:500;
+// buttons 
+button{
+    font: {
+        size:15px;
+        weight:$medium;
+    }
+    border:none;
+    color:white;
+    cursor: pointer;
+    margin-right:1rem;
+    width:9.5rem;
+    height:3.5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    &:hover {
+            background-color: $lightpeach;
+        }
+}
+.darkbtn {
+    color:$black;
+    background-color: $white;
+    &:hover{
+        color:$white;
+    }
+}
+.lightbtn {
+    background-color: $peach;
+}
+@mixin  container {
+    max-width: 1200px;
+}
+@mixin center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin space-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

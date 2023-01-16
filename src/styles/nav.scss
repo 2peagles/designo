@@ -1,0 +1,79 @@
+@import 'global';
+header{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 9999;
+    margin-bottom: 10rem;
+    background-color: $white;
+
+nav{
+    // border:5px solid pink;
+    // height:100vh;
+    padding:1.5rem 0 0;
+    button{
+        width:fit-content;
+        background-color: transparent;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+
+li > img{
+    width:200px;
+}
+li:nth-child(1){
+    padding:0 2rem;
+}
+li:nth-child(2){
+    top:10px;
+    right:10px;
+    position: absolute;
+}
+li:not(.menu){
+    background-color: $black;
+    text-align: left;
+    padding: 1rem;
+}
+a {
+    color:$white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+}
+}
+.hidden{
+    display: none;
+}
+@media (width > 700px) {
+    header{
+        width:100vw;
+        @include center-content();
+    
+    nav{
+        width:69.438rem;
+        text-align: right;
+    
+    li:first-child{
+        float: left;
+        padding: 1rem 0;
+    }
+    li{
+        width:fit-content;
+    }
+    li:not(.menu){
+        background-color: $white;
+    }
+    a{
+        color:$black;
+    }
+    .hidden{
+        display: inline-block;
+    }
+    li:nth-child(2){
+        display: none;
+        }
+    }
+    }
+}
