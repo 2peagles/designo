@@ -30,7 +30,7 @@ export const Footer = () => {
               </div>
               <article className='footericon'>
                   <ol className=''>
-                      <li><img src='/assets/shared/desktop/icon-facebook.svg' alt='facebook icon' /></li>
+                      <li><img src='/assets/shared/desktop/icon-facebook.svg' alt='facebook icon' className='img'/></li>
                       <li><img src='/assets/shared/desktop/icon-youtube.svg' alt='youtube icon' /></li>
                       <li><img src='/assets/shared/desktop/icon-twitter.svg' alt='twitter icon' /></li>
                       <li><img src='/assets/shared/desktop/icon-pinterest.svg' alt='pinterest icon' /></li>

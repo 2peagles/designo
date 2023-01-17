@@ -5,6 +5,7 @@
         $white:#fff;
     // secondary
         $lightpeach:#FFAD9B;
+        $lightbg:#FDF3F0;
         $darkgrey:#333136;
         $lightgrey:#F1F3F5;
 // typography
@@ -51,4 +52,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@mixin space-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

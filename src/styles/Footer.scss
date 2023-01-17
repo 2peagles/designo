@@ -43,9 +43,17 @@
     li{
         padding: 0 .5rem;
         display: inline-block;
-        &:hover img > svg{
-            fill:$lightpeach;
-        }
+        color:$white;
+        // &:hover img > svg > path{
+        //     fill:$lightpeach;
+        // }
+    }
+     svg{
+        fill: currentColor;
+    }
+    img:hover{
+    color:$lightpeach;
+    filter: invert(0%) sepia(0%) saturate(1352%) hue-rotate(0deg) brightness(119%) contrast(0%);
     }
 }
 #footer hr{

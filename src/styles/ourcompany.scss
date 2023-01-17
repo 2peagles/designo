@@ -1,1 +1,81 @@
 @import 'global';
+
+  #about {
+      @include center-content();
+        flex-direction: column;
+
+    //   width: 69.348rem;
+      article {
+          overflow: hidden;
+          text-align: center;
+          margin:2em 0;
+        //   border: 1px solid black;
+
+          border-radius: 1rem;;
+      }
+      article:nth-child(1){
+        color:$white;
+        background-color: $peach;
+      }
+      article:nth-child(2), article:nth-child(4) {
+        background-color: $lightbg;
+        h2{
+            color:$peach;
+        }
+      }
+    div:nth-child(1) img {
+          border-radius: 50%; 
+           background: rgb(168, 119, 119);
+            background: linear-gradient(90deg, rgba(168, 119, 119, .2) 65%, rgba(255, 255, 255, 1) 100%);
+    }
+            
+     div:nth-child(2) img {
+           border-radius: 50%;
+            background: rgb(168, 119, 119);
+            background: linear-gradient(10deg, rgba(168, 119, 119, .2) 65%, rgba(255, 255, 255, 1) 100%);
+      }
+            
+      div:nth-child(3) img {
+          border-radius: 50%;
+          background: rgb(168, 119, 119);
+           background: linear-gradient(180deg, rgba(168, 119, 119, .2) 65%, rgba(255, 255, 255, 1) 100%);
+        }
+    }
+
+.location{
+    @include center-content();
+}
+@media (width > 700px) {
+    #about {
+            @include center-content();
+            flex-direction: column;
+            article {
+                width: 69.348rem;
+                @include center-content();
+                // border: 1px solid black;
+            }
+            article:nth-child(1)  div, article:nth-child(2) div, article:nth-child(4) div{
+                @include center-content();
+                flex-direction: column;
+                text-align: left;
+                width:100%;
+
+                    h1,h2 ,p{
+                        width:450px;
+                    }
+                // border:3px solid green;
+            }
+            article:nth-child(1){
+                @include center-content();
+                flex-direction: row-reverse;
+            }
+            // article:nth-child(2), article:nth-child(4) {
+            //     flex-direction: row-reverse;
+            //  }
+            article:nth-child(3) {
+                width: 69.358rem;
+                @include space-content();
+                text-transform: capitalize;
+            }
+        }
+}
