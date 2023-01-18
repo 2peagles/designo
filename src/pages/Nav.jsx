@@ -6,7 +6,8 @@ export const Nav = () => {
   const handleClick = () =>setMenu(!menu);
   return (
    <header>
-          <nav>
+        <nav>
+          <ol>
             <li className='menu'><Link to='/'><img src='/assets/shared/desktop/logo-dark.png' alt='designo logo'/></Link></li>
              <li className='menu mobile' >
               <button onClick={handleClick} className=''>
@@ -17,7 +18,8 @@ export const Nav = () => {
               <li className={!menu ? 'hidden' : 'visible'}><Link to='/ourcompany'>our company</Link></li>
               <li className={!menu ? 'hidden' : 'visible'}><Link to='/locations'>locations</Link></li>
               <li className={!menu ? 'hidden' : 'visible'}><Link to='/contact'>contact</Link></li>     
-          </nav>
+            </ol>
+        </nav>
    </header>
   )
 }
