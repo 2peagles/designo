@@ -13,7 +13,7 @@ const Contact = () => {
           <hr></hr>
           <input placeholder=' email address' required type='email'/>
           <hr></hr>
-          <input placeholder='phone' required type='number'/>
+          <input placeholder='phone' required type='number '/>
           <hr></hr>
           <input placeholder='message' required/>
           <hr></hr>
