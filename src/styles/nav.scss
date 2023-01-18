@@ -9,8 +9,6 @@ header{
     background-color: $white;
 
 nav{
-    // border:5px solid pink;
-    // height:100vh;
     padding:1.5rem 0 0;
     button{
         width:fit-content;
@@ -20,11 +18,9 @@ nav{
         }
     }
 
-li > img{
-    width:200px;
-}
-li:nth-child(1){
+li:nth-child(1) img{
     padding:0 2rem;
+    width:300px;
 }
 li:nth-child(2){
     top:10px;

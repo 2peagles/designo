@@ -58,8 +58,8 @@ const OurCompany = () => {
            strategies, we inspire audiences to take action and drive real results.</p>
         </div>
       </article>
-      <article className='about_contact_section'>
-        <div className='about_contact_content'>
+      <article className='home_contact_section'>
+        <div className='home_contact_content'>
           <h3> Let's talk about your project</h3>
           <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your
             business grow.

@@ -7,7 +7,7 @@ export const Nav = () => {
   return (
    <header>
           <nav>
-            <li className='menu'><img src='/assets/shared/desktop/logo-dark.png' alt='designo logo'/></li>
+            <li className='menu'><Link to='/'><img src='/assets/shared/desktop/logo-dark.png' alt='designo logo'/></Link></li>
              <li className='menu mobile' >
               <button onClick={handleClick} className=''>
                   {!menu ? <img src='/assets/shared/mobile/icon-hamburger.svg' alt='open main menu' /> : <img src='assets/shared/mobile/icon-close.svg' alt='close main menu' />}
