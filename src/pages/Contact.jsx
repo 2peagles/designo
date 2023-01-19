@@ -11,11 +11,11 @@ const Contact = () => {
         <form>
           <input placeholder='name' required type='name'/>
           <hr></hr>
-          <input placeholder=' email address' required type='email'/>
+          <input placeholder='email address' required type='email'/>
           <hr></hr>
           <input placeholder='phone' required type='number '/>
           <hr></hr>
-          <input placeholder='message' required/>
+          <input placeholder='message' required type='textfield'/>
           <hr></hr>
           <button className='darkbtn'> submit </button>
         </form>

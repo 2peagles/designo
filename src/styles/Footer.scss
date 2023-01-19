@@ -5,7 +5,6 @@
     // right:0;
     // left:0;
     // position: relative;
-    width:1400px;
     @include center-content();
     flex-direction: column;
     text-align: center;
@@ -58,29 +57,28 @@
     }
 }
 #footer hr{
-    width: 69.439rem;
+    max-width: 1100px;
     display: none;
 }
 
 
 @media (width > 1000px) {
     #footer {
-            // bottom:0;
-            // right:0;
-            // left:0;
-            // position: relative;
+            max-width:1400px;
             @include center-content();
             flex-direction: column;
+            margin:auto;
             height: 390px;
             padding-top: 15vh;
             color: $white;
             background-color: $black;
             hr {
-                    display: flex;
+                    display:flex;
+                    width:1100px;
                 }
     
             nav {
-                width: 69.438rem;
+                width:100%;
                 text-align: right;
     
                 li {
@@ -88,25 +86,15 @@
                     display: inline-block;
                     padding: 0 1rem;
                     background-color: transparent;
-                }
-    
+                }  
                 li:first-child {
                     float: left;
-                }
-    
-                li img:first-child {
-                    width: 200px;
-                }
-              
-                a {
-                    color: $white;
-                    text-transform: uppercase;
-                    text-decoration: none;
                 }
             }
             section{
                 @include space-content();
                 padding: 2rem 0 0 ;
+                width:1100px;
             }
             div{
                 width: 55%;
@@ -116,7 +104,6 @@
             }
         }
     #footer section:nth-last-child(1) {
-            width: 69.439rem;
             article:nth-child(1n) {
                 width: 200px;
                 height: 78px;
@@ -138,10 +125,6 @@
 }
 @media (width > 760px) and (height > 800px) {
     #footer {
-            // bottom:0;
-            // right:0;
-            // left:0;
-            // position: relative;
             @include center-content();
             flex-direction: column;
             padding: 15vh 5vw;
@@ -154,7 +137,7 @@
             }
     
             nav {
-                width:90vmin;
+                // width:90vmin;
                 text-align: right;
     
                 li {
@@ -193,7 +176,6 @@
         }
     
         #footer section:nth-last-child(1) {
-            width:100%;
     
             article:nth-child(1n) {
                 width: 200px;

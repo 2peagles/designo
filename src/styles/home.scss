@@ -1,7 +1,6 @@
 @import 'global';
 #home{
     text-align: center;
-    min-height:100vh;
     @include center-content();
     flex-direction: column;
 }
@@ -11,7 +10,8 @@
     color: $white;
     display: flex;
     place-content: center;
-    height:100vh;
+    height:700px;
+    width:90%;
     padding:1rem;
     background-color: $peach;
     background-size: contain;
@@ -76,9 +76,9 @@
     z-index: -1;
     position:absolute;
     background-color: black;
-    &::before:hover{
-        background-color: $peach;
-    }
+}
+.card:hover::before{
+    background-color: $peach;
 }
 .card_one{
     background-image: url('/assets/home/desktop/image-web-design-small.jpg');
@@ -118,7 +118,7 @@
 }
 .home_contact_section{
     @include center-content();
-    height:15vh;
+    // height:9rem;
 }
 .home_contact_content{
     position: absolute;
@@ -148,7 +148,10 @@
         text-align: left;
     }
     .hero{
-        height:100vh;
+        // height:100vh;
+        width:75%;
+        max-width:1400px;
+        max-height: 700px;
         border-radius: 1rem;
     }
         .hero:after {
@@ -208,8 +211,9 @@
         }
     .home_contact_content{
         background-image: url('/assets/shared/desktop/bg-pattern-call-to-action.svg');
-        width: 69rem;
-        padding:  5rem;
+        width: 1100px;
+        padding:  50px;
+        margin-bottom: 3rem;
         button{
             position: absolute;
             right:75px;
@@ -227,31 +231,31 @@
     }
 }
 // tablet
-@media (width > 760px) and (height > 800px)  {
-    .hero{
-        width:90%;
-        margin-top: 6rem;
-        border-radius: 1rem;
-    }
-    .center{
-        display: block;
-    }
-    .cards{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
+// @media (width > 760px) and (height > 800px)  {
+//     .hero{
+//         width:90%;
+//         margin-top: 6rem;
+//         border-radius: 1rem;
+//     }
+//     .center{
+//         display: block;
+//     }
+//     .cards{
+//         grid-template-columns: repeat(1, 1fr);
+//         grid-template-rows: repeat(3, 1fr);
+//     }
 
-    .card{
-        width:689px;
-        height:202px;
-    }
-    .section_two_card{
-    height:202px;
-    width:689px;
-    text-align: left;
-  }  
-  .section_two_card img {
-    float:left;
-    margin-right:3rem;
-}
-}
+//     .card{
+//         width:689px;
+//         height:202px;
+//     }
+//     .section_two_card{
+//     height:202px;
+//     width:689px;
+//     text-align: left;
+//   }  
+//   .section_two_card img {
+//     float:left;
+//     margin-right:3rem;
+// }
+// }

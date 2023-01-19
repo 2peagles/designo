@@ -1,11 +1,9 @@
 import React from 'react'
 import '../styles/ourcompany.scss'
 import '../styles/home.scss'
-// import '../styles/contact.scss'
 const OurCompany = () => {
   return (
-    <section id='about'>
-      {/* <h1>our company</h1> */}
+    <div id='about'>
       <article>
           <img src='/assets/about/desktop/image-about-hero.jpg' alt='' />
           <div className='about_hero'>
@@ -67,7 +65,7 @@ const OurCompany = () => {
           <button className='darkbtn'> get in touch</button>
         </div>
       </article>
-    </section>
+    </div>
   )
 }
 

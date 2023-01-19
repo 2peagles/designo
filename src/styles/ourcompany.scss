@@ -4,10 +4,15 @@
        @include center-content();
         flex-direction: column;
         overflow: hidden;
+        .home_content_contact{
+            padding:5rem;
+        }
             article {
                 overflow: hidden;
                 text-align: center;
-                margin:3em 0;
+                margin:2rem 0;
+                // height:fit-content;
+                // padding:3rem 0;
                 border-radius: 1rem;
                 }
              article:nth-child(1) div, article:nth-child(2) div, article:nth-child(4) div {
@@ -20,10 +25,7 @@
                   }
       article:nth-child(1){
         color:$white;
-        padding:0;
-        margin:0 0;
         background-color: $peach;
-        background-position: top;
             background-repeat: no-repeat;
             background-image: url('/assets/contact/desktop/bg-pattern-hero-desktop.svg');
         h1{
@@ -67,7 +69,7 @@
         }
     }
     article:nth-child(4){
-        height:200vh;
+        max-height: 1000px;
     }
     // article:nth-child(5){
     // color:$white;
@@ -107,11 +109,11 @@
                 @include space-content();
                 text-transform: capitalize;
             }
-            article:nth-child(5){
-                margin-top:8rem;
-            }
+            // article:nth-child(5){
+            //     margin-top:8rem;
+            // }
             article:nth-child(4){
-                height:70vh;
+                margin-bottom: 10rem;
             }
         }
 }
