@@ -12,7 +12,6 @@
     place-content: center;
     height:640px;
     width:100%;
-    margin:$marginbottom;
     
     background-color: $peach;
     background-size: contain;
@@ -144,7 +143,6 @@
     #home{
         width:1400px;
         margin:auto;
-        margin-top:6rem;
         text-align: left;
     }
     .hero{
@@ -206,6 +204,10 @@
             text-align: center;
             grid-template-columns: repeat(3, 1fr);
         }
+        .section_two_cards{
+            margin-bottom:0;
+            padding:0;
+        }
         .section_two_card{
             width:350px;
         }
@@ -213,7 +215,6 @@
         background-image: url('/assets/shared/desktop/bg-pattern-call-to-action.svg');
         width: 1100px;
         padding:  50px;
-        margin-bottom: 3rem;
         text-align: left;
         button{
             position: absolute;
