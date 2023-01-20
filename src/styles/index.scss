@@ -22,12 +22,18 @@
 body, html{
   margin:0;
   padding:0;
+  overflow-x: hidden;
 }
-section:not(.home_contact_section, .office, .footernav){
-  margin:6rem 0;
+section:not(.hero, .office, .footernav){
+  margin:$marginbottom;
+  width:$contentwidth;
+  // border:5px solid red;
   @media (width < 700px){
-    margin:2rem 0;
+    margin-bottom: $marginbottommobile;
   }
+     @media (width > 600px) and (width < 1000px) {
+       width:$tabletwidth;
+     }
 }
 ol, ul {
   padding:0;

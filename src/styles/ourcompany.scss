@@ -4,6 +4,7 @@
        @include center-content();
         flex-direction: column;
         overflow: hidden;
+        padding:4rem 0 0;
         .home_content_contact{
             padding:5rem;
         }
@@ -109,11 +110,8 @@
                 @include space-content();
                 text-transform: capitalize;
             }
-            // article:nth-child(5){
-            //     margin-top:8rem;
-            // }
             article:nth-child(4){
                 margin-bottom: 10rem;
-            }
         }
+    }
 }

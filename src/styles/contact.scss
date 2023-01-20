@@ -2,10 +2,8 @@
 
 #contact{
     @include center-content();
-    // border:1px solid black;
     flex-direction: column;
     text-align: center;
-    // padding-top:rem;
     overflow: hidden;
     article{
         width:69.348rem;
@@ -13,8 +11,7 @@
         // border: 1px solid black;
     }
     article:first-of-type{
-        height:95vh;
-        max-height: 500px;
+        margin:6rem 0 ;
         border-radius: 1rem;
         @include center-content();
         flex-direction: column;
@@ -35,7 +32,6 @@
     }
 form{
     width:35%;
-    height:80%;
     button{
         margin-top:1rem;
     }
@@ -114,6 +110,7 @@ form{
                     background-image: url('/assets/contact/desktop/bg-pattern-hero-desktop.svg');
                 }
                 form{
+                    height:80%;
                     button{
                         float: right;
                     }

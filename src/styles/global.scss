@@ -40,6 +40,23 @@ button{
 .lightbtn {
     background-color: $peach;
 }
+$width:1440px;
+$contentwidth:1100px;
+
+$tabletheight:202px;
+$tabletwidth: 834px;
+$tabletcontentwidth:689px;
+
+$mobilewidth:375px;
+$mobilecontentwidth:357px;
+$mobileheight:250px;
+
+$marginmobile:3rem 0;
+$marginbottommobile: 0 0 3rem;
+
+$margin: 5rem 0;
+$marginbottom: 0 0 7rem;
+
 @mixin  container {
     max-width: 1200px;
 }

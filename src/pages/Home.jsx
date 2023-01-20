@@ -4,27 +4,27 @@ import {Link} from 'react-router-dom'
 const Home = () => {
   return (
     <div id='home'>  
-       <div className='hero'>
+       <section className='hero'>
         <div className='home_hero_content'>
           <h1>Award-winning custom designs and digital branding solutions</h1>
           <p> With over 10 years in the industry, we are experienced in creating fully responsive websites, app designs, and engaging brand experiences. Find out more about our services.</p>
           <button className='darkbtn'> learn more</button>
         </div> 
-      </div>
+      </section>
 
       <section className='card_section'>
         <div className='cards'>
         <article className='card card_one'>
           <h2> web design</h2>
-          <Link> view projects <span><img src='/assets/shared/desktop/icon-right-arrow.svg' alt=' link arrow'/></span></Link>
+          <Link to='webdesign'> view projects <span><img src='/assets/shared/desktop/icon-right-arrow.svg' alt=' link arrow'/></span></Link>
         </article>
         <article className='card card_two'>
           <h2> app design</h2>
-            <Link> view projects <span><img src='/assets/shared/desktop/icon-right-arrow.svg' alt=' link arrow' /></span></Link>
+            <Link to='appdesign'> view projects <span><img src='/assets/shared/desktop/icon-right-arrow.svg' alt=' link arrow' /></span></Link>
         </article>
         <article className='card card_three'>
           <h2> graphic design</h2>
-            <Link>view projects <span><img src='/assets/shared/desktop/icon-right-arrow.svg' alt=' link arrow' /></span></Link>
+            <Link to='/graphicdesign'>view projects <span><img src='/assets/shared/desktop/icon-right-arrow.svg' alt=' link arrow' /></span></Link>
         </article>
         </div>
       </section>

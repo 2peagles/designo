@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/contact.scss'
 const Contact = () => {
   return (
-    <section id='contact'>
+    <div id='contact'>
       <article>
         <div>
           <h1> contact us</h1>
@@ -37,7 +37,7 @@ const Contact = () => {
           <button className='lightbtn'> see location</button>
         </div>
       </article>
-    </section>
+    </div>
   )
 }
 

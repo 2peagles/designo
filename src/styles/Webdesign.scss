@@ -1,0 +1,202 @@
+@import 'global';
+
+#webdesign, #appdesign, #graphicdesign{
+    @include center-content();
+    flex-direction: column;
+        article{
+            width:$mobilecontentwidth;
+            margin:$marginmobile;
+            text-align: center;
+        }
+}
+#webdesign article:nth-child(1), #appdesign article:nth-child(1), #graphicdesign article:nth-child(1){
+    @include center-content();
+    flex-direction: column;
+
+    height: 320px;
+    width:100%;
+    color:$white;
+    background-color: $peach;
+    background-size: cover;
+    background-image: url('/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
+        h1{
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+        h1, p{
+            width:80%;
+        }
+}
+.design_container div, .appdesign_container div, .graphicdesign_container div{
+    margin:$marginmobile;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: $lightbg;
+    height:479px;
+            &:hover {
+                    cursor: pointer;
+                    color:$white;
+                    background-color: $peach;
+                    h2 {
+                        color:$white;
+                    }
+                }
+    img{
+        width:100%;
+    }
+        h2{
+            color: $peach;
+            font-size: 1.625rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 1.625rem;
+        }
+}
+.webcard {
+    color: $white;
+    height: 250px;
+    width:$mobilecontentwidth;
+    border-radius: 1rem;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    h2 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    a {
+        color: $white;
+        letter-spacing: 2px;
+        text-decoration: none;
+
+        font: {
+            size: 15px;
+            weight: $medium;
+        }
+    }
+}
+.webcard::before {
+    content: '';
+    inset: 0;
+    opacity: .5;
+    z-index: -1;
+    position: absolute;
+    background-color: black;
+}
+.webcard:hover::before {
+    background-color: $peach;
+}
+.webcardone{
+    background-image: url('/assets/home/desktop/image-web-design-small.jpg');
+}
+.appcard{
+    background-image: url('/assets/home/desktop/image-app-design.jpg');
+}
+.graphiccard{
+    background-image: url('/assets/home/desktop/image-graphic-design.jpg');
+}
+#webdesign article:nth-child(3), #appdesign article:nth-child(3), #graphicdesign article:nth-child(3){
+    margin-bottom: 7rem;
+    margin-top:0;
+}
+@media (width > 600px) and ( width < 1000px) {
+    #webdesign, #appdesign, #graphicdesign {
+        width: $tabletwidth;
+            article{
+                margin:$margin;
+                width:$tabletcontentwidth;
+                border-radius:1rem;
+            }
+    }
+    #webdesign article:nth-child(1),#appdesign article:nth-child(1), #graphicdesign article:nth-child(1){
+        width:$tabletcontentwidth;
+        height: 252px;
+            h1 {
+                font-size: 3rem;
+            }
+            p{
+                width:60%;
+                font-size: 16px;
+                line-height: 1.625rem;
+            }
+        }
+    .design_container div, .appdesign_container div, .graphicdesign_container div{
+        height:310px;
+             img{
+                width:50%;
+                float:left;
+            }
+            span{
+                @include center-content();
+                flex-direction: column;
+                margin:auto;
+                height:100%;
+                width:40%;
+        }
+    }
+    .webcard{
+        width:$tabletcontentwidth;
+    }
+    
+     #webdesign article:nth-child(3),#appdesign article:nth-child(3),#graphicdesign article:nth-child(3) {
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+}
+@media (width > 1000px) {
+    #webdesign, #appdesign, #graphicdesign{
+        width: $width;
+            article{
+                margin:$margin;
+                width:$contentwidth;
+                border-radius: 1rem;
+            }
+    }
+    #webdesign article:nth-child(1), #appdesign article:nth-child(1), #graphicdesign article:nth-child(1) {
+        height: 252px;
+        width: $contentwidth;
+        background-size: contain;
+             h1 {
+                font-size: 3rem;
+            }
+            p{
+                width:35%;
+                line-height: 1.625rem;
+            }
+    }
+    .design_container, .appdesign_container, .graphicdesign_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:2rem;
+            div{
+                margin:0;
+                     span {
+                        @include center-content();
+                        flex-direction: column;    
+                        margin:auto;   
+                        width: 70%;
+                        h2{
+                            margin-bottom:.5rem;
+                        }
+                    }        
+            }
+     }
+    
+     .webcard_section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            .webcard{
+                width:531px;
+            }
+     }
+}
