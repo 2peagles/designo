@@ -9,15 +9,15 @@ const Contact = () => {
           <p>Ready to take it to the next level? Let's talk about your project or idea and find out how we can help your busines grow.If you are looking for unique digital experiences that's relatable to your users, drop us a line.</p>
         </div>
         <form>
-          <input placeholder='name' required type='name'/>
+          <input placeholder='name' required type='name' />
           <hr></hr>
-          <input placeholder='email address' required type='email'/>
+          <input placeholder='email address' required type='email ' name='email' />
           <hr></hr>
-          <input placeholder='phone' required type='number '/>
+          <input placeholder='phone' required type='tel-number' name='phone' maxlength='12'/>
           <hr></hr>
-          <input placeholder='message' required type='textfield'/>
+          <textarea placeholder='message' required type='text' maxlength="100" />
           <hr></hr>
-          <button className='darkbtn'> submit </button>
+          <button className='darkbtn' onSumbit={()=>alert(' We will get back to you shortly!')}> submit </button>
         </form>
       </article>
       <article className='locations'>

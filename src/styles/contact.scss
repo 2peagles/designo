@@ -48,18 +48,17 @@ form{
     input:focus{
         color:$white;
     }
-    input::placeholder{
+    input::placeholder, textarea::placeholder{
         color:$white;
-        // padding-left: 1rem;
         text-transform: capitalize;
     }
-    input:nth-last-child(3){
-        padding: 1rem 1rem 70px;
-        // &::placeholder{
-        //     display: flex;
-        //     align-items: top;
-        //     justify-content: top;
-        // }
+    textarea{
+        height:100px;
+        width:100%;
+        border: none;
+        outline: none;
+        padding:1rem;
+        background-color: transparent;
     }
 
     h2{
