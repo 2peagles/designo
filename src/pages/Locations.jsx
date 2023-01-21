@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import '../styles/location.scss'
 import '../styles/home.scss'
+
 const Locations = () => {
   return (
     <div id='location'>
@@ -9,7 +10,7 @@ const Locations = () => {
           <div>
             <img src='/assets/locations/desktop/image-map-canada.png ' alt='location of the canada office' />
           </div>
-     
+
           <div>
             <span className='heading'>Canada</span>
              <div>

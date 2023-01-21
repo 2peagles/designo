@@ -8,7 +8,7 @@ const Home = () => {
         <div className='home_hero_content'>
           <h1>Award-winning custom designs and digital branding solutions</h1>
           <p> With over 10 years in the industry, we are experienced in creating fully responsive websites, app designs, and engaging brand experiences. Find out more about our services.</p>
-          <button className='darkbtn'> learn more</button>
+          <Link to='/ourcompany'><button className='darkbtn'> learn more</button></Link>
         </div> 
       </section>
 
@@ -61,7 +61,7 @@ const Home = () => {
           <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your
             business grow.
           </p>
-          <button className='darkbtn'> get in touch</button>
+          <Link to='contact'><button className='darkbtn'> get in touch</button></Link>
         </article>
       </section>
 
