@@ -80,7 +80,12 @@
     //         position: absolute;
     //      }
     // }
-@media (width > 700px) {
+    @media (width > 700px) {
+        article{
+            width:480px;
+        }
+    }
+@media (width > 1000px) {
     #about {
         width:69.348rem;
             @include center-content();

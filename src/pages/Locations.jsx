@@ -1,4 +1,5 @@
-import React,{useState, useEffect, useRef} from 'react'
+import React,{useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/location.scss'
 import '../styles/home.scss'
 
@@ -50,7 +51,7 @@ const Locations = () => {
           </div>
          
           <div>
-            <span className='heading'>united kingdom</span>
+            <span className='heading' >united kingdom</span>
             <div>
             <p><span>designo UK office</span>
               13  Colorado Way Rhyd-y-fro SA8 9GA</p>
@@ -67,7 +68,7 @@ const Locations = () => {
           <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your
             business grow.
           </p>
-          <button className='darkbtn'> get in touch</button>
+          <Link to='/contact'><button className='darkbtn' > get in touch</button></Link>
         </article>
       </section>
     </div>

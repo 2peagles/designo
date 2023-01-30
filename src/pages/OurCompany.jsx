@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/ourcompany.scss'
 import '../styles/home.scss'
 const OurCompany = () => {
@@ -31,17 +32,17 @@ const OurCompany = () => {
         <div>
           <img src='assets/shared/desktop/illustration-canada.svg' alt='' />
           <h3> canada</h3>
-          <button className='lightbtn'> see location</button>
+          <Link to='/locations'><button className='lightbtn'> see location</button></Link>
         </div>
         <div>
           <img src='/assets/shared/desktop/illustration-australia.svg' alt='' />
           <h3> australia</h3>
-          <button className='lightbtn'> see location</button>
+           <Link to='/locations'><button className='lightbtn'> see location</button></Link>
         </div>
         <div>
           <img src='assets/shared/desktop/illustration-united-kingdom.svg' alt='' />
           <h3> united kindom</h3>
-          <button className='lightbtn'> see location</button>
+           <Link to='/locations'><button className='lightbtn'> see location</button></Link>
         </div>
       </article>
       <article>
