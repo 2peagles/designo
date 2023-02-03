@@ -1,32 +1,36 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/location.scss'
 import '../styles/home.scss'
+// import Map  from './components/map';
+
 
 const Locations = () => {
   return (
     <div id='location'>
       <section>
-        {/* <article> */}
           <div>
             <img src='/assets/locations/desktop/image-map-canada.png ' alt='location of the canada office' />
+            {/* <Map/> */}
           </div>
 
           <div>
             <span className='heading'>Canada</span>
              <div>
-              <p><span>designo central office</span>
-              3886 Wellington Street Toronto, Ontario M9C 3J5</p>
+              <p>
+                <span>designo central office</span>
+              3886 Wellington Street Toronto, Ontario M9C 3J5
+              </p>
 
-              <p><span>contact</span>
+              <p>
+                <span>contact</span>
                     P : +1 253-863-8967
-                    M : contact@designo.co</p>
+                    M : contact@designo.co
+                </p>
             </div>
           </div>
-        {/* </article> */}
       </section>
       <section>
-        {/* <article> */}
           <div>
             <img src='/assets/locations/desktop/image-map-australia.png' alt='' />
           </div>
@@ -42,10 +46,8 @@ const Locations = () => {
               M : contact@designo.au</p>
               </div>
           </div>
-        {/* </article> */}
       </section>
       <section>
-        {/* <article> */}
           <div>
             <img src='/assets/locations/desktop/image-map-united-kingdom.png' alt='' />
           </div>
@@ -60,7 +62,6 @@ const Locations = () => {
               M : contact@designo.uk</p>
               </div>
           </div>
-        {/* </article> */}
       </section>
       <section className='home_contact_section'>
         <article className='home_contact_content'>
