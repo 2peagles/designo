@@ -30,11 +30,11 @@ const Contact = () => {
         <form>
           <input placeholder='name' required type='name' />
   
-          <input placeholder='email address' required type='email ' name='email' id='email' pattern='/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$$/'  title='must be a valid emai'/>
+          <input placeholder='email address' required type='email ' name='email' id='email' pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'  title='must be a valid email'/>
 
-          <input placeholder='phone' required type='tel-number' name='phone' maxlength='12' id='phone'  pattern="/[0-9]{10}/" title='must be a valid phone number'/>
+          <input placeholder='phone' required type='tel-number' name='phone' maxlength='12' id='phone'  pattern="[0-9]{10}" title='must be a valid phone number'/>
       
-          <textarea placeholder='message' required type='text' maxlength="100" id='textarea'/>
+          <textarea placeholder='message' required type='text' maxLength='100' id='textarea'/>
    
           <button className='darkbtn'  onSubmit={handleSubmit}> submit </button>
         </form>
